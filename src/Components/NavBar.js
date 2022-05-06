@@ -4,11 +4,11 @@ import React, { Component } from 'react'
 export class NavBar extends Component {
   
   render() {
-      let {title,about}=this.props;
+
     return (
         <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="/">{title}</a>
+            <a className="navbar-brand" href="/">NewsMonkey</a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span className="navbar-toggler-icon"></span>
               </button>
@@ -18,9 +18,13 @@ export class NavBar extends Component {
                     <li className="nav-item active">
                         <a className="nav-link" href="/">Home</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/">{about}</a>
-                    </li>
+                    <li className="nav-item"><a className="nav-link" href="/business">Business</a> </li>
+                    <li className="nav-item"><a className="nav-link" href="/entertainment">Entertainment</a> </li>
+                    <li className="nav-item"><a className="nav-link" href="/general">General</a> </li>
+                    <li className="nav-item"><a className="nav-link" href="/health">Health</a> </li>
+                    <li className="nav-item"><a className="nav-link" href="/science">Science</a> </li>
+                    <li className="nav-item"><a className="nav-link" href="/sports">Sports</a> </li>
+                    <li className="nav-item"><a className="nav-link" href="/technology">Technology</a> </li>
                 </ul>
             </div>
         </nav>
